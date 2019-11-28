@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GmailTest" parallel="false" thread-count="5" verbose="10">
+    <parameter name="browser" value="${browser}" />
+    <test name="GMail Test" preserve-order="true">
+        <classes>
+            <class name="space.adyachenko.GmailTest" />
+        </classes>
+    </test>
+</suite>

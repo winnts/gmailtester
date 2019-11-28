@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn">
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{yyyy-MMM-dd HH:mm:ss a} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+    <RollingFile name="File" fileName="logs/gmailtest-${date:yyyy-MM-dd'_'HH-mm-ss}.log" filePattern="logs/gmailtest.%d{yyyy-MMM-dd}.log">
+      <PatternLayout pattern="%d{yyyy-MMM-dd HH:mm:ss a} [%t] %-5level %logger{36} - %msg%n"/>
+      <TimeBasedTriggeringPolicy />
+    </RollingFile>
+  </Appenders>
+  <Loggers>
+    <Root level="debug">
+      <AppenderRef ref="Console" level="debug"/>
+      <AppenderRef ref="File" level="debug"/>
+    </Root>
+  </Loggers>
+</Configuration>
