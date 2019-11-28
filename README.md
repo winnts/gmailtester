@@ -23,7 +23,7 @@ To run the project use:
 mvn clean -Ptest package
 ```
 
-Allure report will be available in **/target/allure-results**. Report generation can be done by:
+Allure report will be available in **target/allure-results**. Report generation can be done by:
 ```
 cd target
 allure serve allure-results
